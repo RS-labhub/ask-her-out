@@ -1,0 +1,14 @@
+#Ideation
+    1. Multiple pages
+    2. Simple UI
+    3. Animation on each pages
+
+#Page design:
+    1. First page: Hi/Hello
+    2. Second page: Compliment
+    3. Third page: Ask her out
+    4. If she says, "Yes", then Yes page
+    5. "NO" page one
+    6. "NO" page two
+    7. Un-Clickable button page
+    8. Final page
