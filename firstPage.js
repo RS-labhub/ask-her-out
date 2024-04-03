@@ -26,8 +26,8 @@
 const img = document.getElementById('image');
 
 const images = {
-    hi: "Assets/hi.gif",
-    ori: "Assets/sad.gif"
+    hi: "Pages/Assets/hi.gif",
+    ori: "Pages/Assets/sad.gif"
 }
 
 function ChangeImage(giphy) {
