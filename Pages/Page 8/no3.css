@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #110515;
+	height: 100vh;
+    overflow: hidden;
+    /* background-image: url('\\Assets\\wall2.jpg');
+    background-size: cover; */
+}
+
+.circle{
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    aspect-ratio: 1/1;
+    background: rgb(249, 206, 247);
+    box-shadow: 0 0 10px rgb(230, 0, 255), 0 0 20px rgb(218, 27, 221),0 0 30px rgb(216, 34, 244),0 0 40px rgb(209, 110, 228),0 0 50px;
+    border-radius: 30%;
+    animation: animate 5s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(-25deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+h1{  
+    margin: 5rem 0 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.red{
+    color: red;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+img{
+    margin-top:0;
+    padding-top: 1rem;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 29rem;
+    padding-top: 2rem;
+    gap: 12rem;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    top: calc(100% - 10rem);
+    min-width: 120px;
+    margin: 4px 2px;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    background-color: rgb(245, 116, 142);
+    z-index: 1000;
+}
+
+#yes{
+    background-color: rgb(237, 16, 64);
+}
+
+#no:hover span {
+    display:none
+}
+
+#no:hover:before {
+    content:"Uff, You Girls 😑";
+}
+
+body.noo {
+    background-image: linear-gradient(0.25turn, #100716, #0e031f, #031d17,#250212, #181802);
+}
+
+.watermark {
+    opacity: 0.5;
+    color: rgb(243, 214, 214);
+    position: fixed;
+    top: 95%;
+    left: 47%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(243, 214, 214);
+}

@@ -1,0 +1,94 @@
+body {
+	height: 100vh;
+    overflow: hidden;
+}
+
+h1{  
+    margin: 5rem 0 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #111;
+}
+
+img{
+    margin-top:0;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 29rem;
+    padding-top: 2rem;
+    gap: 12rem;
+}
+
+.romantic1{
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+.romantic2{
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.romantic3{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+.romantic4{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.romantic5{
+    margin: 0;
+    position: absolute;
+    top: 79%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+}
+.romantic6{
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.romantic7{
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.watermark {
+    opacity: 0.5;
+    color: BLACK;
+    position: fixed;
+    top: 97%;
+    left: 47%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

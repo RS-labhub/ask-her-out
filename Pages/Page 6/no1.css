@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: #23011c; */
+    background-image: linear-gradient(0.25turn, #100716, #1f031b, #1c0101,#250212, #200f02);
+	height: 100vh;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    aspect-ratio: 1/1;
+    background: rgb(248, 248, 248);
+    box-shadow: 0 0 10px rgb(232, 9, 16), 0 0 20px rgb(148, 7, 7), 0 0 30px rgb(91, 3, 3), 0 0 40px rgb(68, 2, 10), 0 0 50px rgb(32, 1, 2);
+    border-radius: 50%;
+    animation: animate 5s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(-100vh) skew(-5deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0) skew(5deg);
+        opacity: 0;
+    }
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+h2{  
+    margin: 17rem 0 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.red{
+    color: rgb(233, 71, 71);
+    font-family: cursive;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    gap: 12rem;
+}
+
+.watermark {
+    opacity: 0.5;
+    color: rgb(243, 214, 214);
+    position: fixed;
+    top: 95%;
+    left: 47%;
+}
+
+.watermark a{
+    text-decoration: none;
+    color: rgb(243, 214, 214);
+}
