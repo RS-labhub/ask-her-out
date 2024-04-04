@@ -17,7 +17,6 @@ body {
 	height: 50px;
 	width: 50px;
 	z-index: -1;
-	/* background-color: #fff; */
     border-radius: 33%;
 	box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
 	animation: animate 7s linear infinite;
