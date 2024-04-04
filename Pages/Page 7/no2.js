@@ -1,3 +1,23 @@
+//Integrating Flagsmith
+function enabledarkmode() {
+    document.body.style.filter = "invert(1)"
+  }
+  async function checkDark() {
+    // init flagsmith
+    await flagsmith.init({
+      environmentID: "K2EbQxscfBoTSYksio9ikJ"
+    });
+    const is_dark = flagsmith.getValue("dark_mode", {
+      fallback: false
+    });
+    console.log("[FLAGSMITH] Is dark mode enabled:- ", is_dark)
+    if (!is_dark) return;
+    if (is_dark) {
+      enabledarkmode()
+    }
+  }
+  checkDark()
+
 var pos = document.documentElement;
 pos.addEventListener('mousemove', e =>{pos.style.setProperty('--x',e.clientX + 'px')
 pos.style.setProperty('--y',e.clientY + 'px')})
