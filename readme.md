@@ -4,7 +4,8 @@
 
 <h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 Just send this to her! 💓</h3>
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/2566d37c-f5f2-4c80-ac44-6a9cdd4efc7e
+
+https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
 
 ### But... I Love You
@@ -26,7 +27,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2566d37c-f5f2-4c80-ac44
 - Here is the walk-through of "But.. I Love You" project.
 
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/5642a06f-bcb7-4c89-be94-f7c99c2344e7
+https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f-0e9641be8e7b
 
 
 <p align="center">Video Demonstration</p>
