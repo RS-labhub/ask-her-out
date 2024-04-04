@@ -43,7 +43,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f
   <img src="Screenshots/unclickableYes.png"  />
 </p>
 
-https://github.com/RS-labhub/I-Love-You/screenshots/117426013/75b10036-6158-423c-83d5-25428c4e7ad6
+https://github.com/RS-labhub/I-Love-You/assets/117426013/59831c53-631f-4c14-b8fc-10a4a534eb0a
 
 $~$
 
@@ -117,7 +117,7 @@ $~$
 
 ### :people_holding_hands: Meet the Author
 
-<img  src="Assets/Author.jpg" alt="Author">
+<img  src="Pages/Assets/author.jpg" alt="Author">
 
 
 ### :email: Contact 
@@ -138,6 +138,8 @@ $~$
 <p align="center">
   Readme created with the help of <a href="https://github.com/quine-sh/README-Template/blob/main/README.md" alt="https://github.com/quine-sh/README-Template/blob/main/README.md">Quine Readme Template</a>
 </p>
+
+<p align="right" color="##F2F3F5>Note: The site is not responsive yet, but it will be responsive soon.</p>
 
 <p align="right" >
     <img height="40px" width="40px" src="Assets\RS LOGO.png" />
