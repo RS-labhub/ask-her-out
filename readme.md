@@ -2,7 +2,10 @@
     BUT... I LOVE YOU ❣️
 </h1>
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/2566d37c-f5f2-4c80-ac44-6a9cdd4efc7e
+<h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 Just send this to her! 💓</h3>
+
+
+https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
 
 ### But... I Love You
@@ -24,7 +27,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2566d37c-f5f2-4c80-ac44
 - Here is the walk-through of "But.. I Love You" project.
 
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/5642a06f-bcb7-4c89-be94-f7c99c2344e7
+https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f-0e9641be8e7b
 
 
 <p align="center">Video Demonstration</p>
@@ -73,10 +76,18 @@ $~$
 
 
 ## Why "But.. I Love You?
-
+So, what's the idead behind making "But.. I love you". Well, it's simple and self explained. We all loved someone and unable to say because of some situations or feeling of being lost. So in short, "But... I Love You" aids individuals in proposing to their loved ones. It personalizes your proposal with an interactive style. This will help in impressing your love or loved ones(🤗), And will help you win their heart or love.
 
 $~$
-    
+
+### Dependencies
+<h2 align="center"><a href="https://app.flagsmith.com/">Flagsmith</a></h2>
+
+https://github.com/RS-labhub/I-Love-You/assets/117426013/c22a0339-0195-471f-9fe4-b0cfc5e31fcf
+
+<p align="center">Working Demo </p>
+
+
 **Set Up Your Environment**
 
 1. `Fork` our repository to your GitHub account. 
