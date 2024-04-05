@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the clickable button
     document.getElementById("enable").style.display = "inline";
 
-    // Enable the clickable button
-    document.getElementById("enable").disabled = false;
-
     // Hide the loading button
     document.getElementById("disable").style.display = "none";
   }
