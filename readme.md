@@ -1,6 +1,8 @@
+<hr>
 <h1 align="center">
     BUT... I LOVE YOU ❣️
 </h1>
+<hr>
 
 <h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 Just send this to her! 💓</h3>
 
@@ -8,11 +10,20 @@
 https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
 
-### But... I Love You
+## But... I Love You
 - This project/ web application can help you to propose your crush and make her forever and ever yours only.
 
+## Inspiration
+- I particularly enjoy taking an idea and making it a reality. Since this project addresses a problem we all encounter, **rejection**. Therefore, "But... I Love You" provid us an opportunity to apply our thoughts, and thus a chance to win someone's heart.
 
-### :books: Index
+## How I built it
+- The oldest but finest web technologies, HTML5, CSS3, and JavaScript, is used in the construction of our Website. Using HTML5, we first constructed the basic framework of our website, specifying the design, text, and other components required for every page. Then designed the page using CSS3 and using a powerful CSS framework "**BOOTSTRAP** v5". And then goes the animations, which are aided by just simple CSS and JavaScript. Therefore, by using them, I developed a visually appealing, engaging, and user-friendly proposal website that captivates and excites people from the time they enter by utilizing the powers of HTML5, CSS, and JavaScript.
+
+## What's next for "But... I Love You ❣️"
+- I am thinking of converting this website into App and adding some more features like to remind special occasions and dateing system, surprising them with some virtual gifts, and making special fleeting for more impressive moves. This will also help to enhance my learning while doing all these and adding all these features. But for now, I'm just trying to make it compatible to all the devices, so that it will reach to more and more people, and gain some popularity, so that people start contributing in it.
+
+
+## :books: Index
 
 - [Demo](#movie_camera-Demo)
 - [Screenshots](#screenshots)
@@ -22,7 +33,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b
 - [Contact](#email-contact)
 
 
-###  :movie_camera: Demo
+##  :movie_camera: Demo
 - After a brief introduction, let's dive a little more inside the project.
 - Here is the walk-through of "But.. I Love You" project.
 
@@ -32,7 +43,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f
 
 <p align="center">Video Demonstration</p>
 
-### Screenshots
+## Screenshots
 <p align="center">
   <img src="Screenshots/hello.png"  />
   <img src="Screenshots/shower.png"  />
@@ -47,7 +58,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/59831c53-631f-4c14-b8fc
 
 $~$
 
-###  :outbox_tray: Set up
+##  :outbox_tray: Set up
 - These are the steps required to install/run the project.
 - You can also directly proceed by using the live server [demo link](https://rs-labhub.github.io/I-Love-You/)
 
@@ -80,13 +91,21 @@ So, what's the idead behind making "But.. I love you". Well, it's simple and sel
 
 $~$
 
-### Dependencies
-<h2 align="center"><a href="https://app.flagsmith.com/">Flagsmith</a></h2>
+# Dependencies
+
+<h2>1. <a href="https://app.flagsmith.com/">Flagsmith</a></h2>
 
 https://github.com/RS-labhub/I-Love-You/assets/117426013/c22a0339-0195-471f-9fe4-b0cfc5e31fcf
 
 <p align="center">Working Demo </p>
 
+<br>
+<h2>2. <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a></h2>
+<br>
+<h2>3. HTML5, CSS3, JavaScript</h2>
+<br>
+
+## Setup and Contributions Guidelines
 
 **Set Up Your Environment**
 
