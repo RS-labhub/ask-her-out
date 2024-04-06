@@ -4,12 +4,11 @@
 
 <hr>
 <h1 align="center">
-    BUT... I LOVE YOU ❣️
+    BUT... <br>I LOVE YOU ❣️
 </h1>
 <hr>
 
-<h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 Just send this to her! 💓</h3>
-
+<h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 <br>Just send this to her! 💓</h3>
 
 https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
@@ -64,6 +63,23 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/6f1f4923-50d1-4b85-96bd
 
 https://github.com/RS-labhub/I-Love-You/assets/117426013/59831c53-631f-4c14-b8fc-10a4a534eb0a
 
+
+# Dependencies
+
+<h2>1. <a href="https://app.flagsmith.com/">Flagsmith</a></h2>
+
+https://github.com/RS-labhub/I-Love-You/assets/117426013/c22a0339-0195-471f-9fe4-b0cfc5e31fcf
+
+<p align="center">Working Demo </p>
+
+<br>
+<h2>2. <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a></h2>
+<br>
+<h2>3. HTML5, CSS3, JavaScript</h2>
+<br>
+
+## Setup and Contributions Guidelines
+
 $~$
 
 ##  :outbox_tray: Set up
@@ -94,22 +110,6 @@ $~$
 </p>
 
 $~$
-
-# Dependencies
-
-<h2>1. <a href="https://app.flagsmith.com/">Flagsmith</a></h2>
-
-https://github.com/RS-labhub/I-Love-You/assets/117426013/c22a0339-0195-471f-9fe4-b0cfc5e31fcf
-
-<p align="center">Working Demo </p>
-
-<br>
-<h2>2. <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a></h2>
-<br>
-<h2>3. HTML5, CSS3, JavaScript</h2>
-<br>
-
-## Setup and Contributions Guidelines
 
 **Set Up Your Environment**
 
@@ -156,10 +156,6 @@ $~$
 
 <p align="center">
     People who <a href="https://github.com/RS-labhub/I-Love-You/stargazers">STARRED</a> this repo
-</p>
-
-<p align="center">
-  Readme created with the help of <a href="https://github.com/quine-sh/README-Template/blob/main/README.md" alt="https://github.com/quine-sh/README-Template/blob/main/README.md">Quine Readme Template</a>
 </p>
 
 <p align="right">Note: The site is not responsive yet, but it will be responsive soon.</p>
