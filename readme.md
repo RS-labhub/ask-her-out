@@ -13,7 +13,7 @@
 
 https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
-
+<hr>
 ## But... I Love You
 - This project/ web application can help you to propose your crush and make her forever and ever yours only.
 
@@ -28,7 +28,7 @@ So, what's the idead behind making "But.. I love you". Well, it's simple and sel
 
 ## What's next for "But... I Love You ❣️"
 - I am thinking of converting this website into App and adding some more features like to remind special occasions and dateing system, surprising them with some virtual gifts, and making special fleeting for more impressive moves. This will also help to enhance my learning while doing all these and adding all these features. But for now, I'm just trying to make it compatible to all the devices, so that it will reach to more and more people, and gain some popularity, so that people start contributing in it.
-
+<hr>
 
 ## :books: Index
 
@@ -38,7 +38,7 @@ So, what's the idead behind making "But.. I love you". Well, it's simple and sel
 - [Contribute](#building_construction-Contribute)
 - [Project Author](#people_holding_hands-Meet-the-Author)
 - [Contact](#email-contact)
-
+<hr>
 
 ##  :movie_camera: Demo
 - After a brief introduction, let's dive a little more inside the project.
@@ -49,7 +49,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f
 
 
 <p align="center">Video Demonstration</p>
-
+<hr>
 ## Screenshots
 <p align="center">
   <img src="Screenshots/hello.png"  />
