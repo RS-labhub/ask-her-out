@@ -45,9 +45,7 @@ So, what's the idead behind making "But.. I love you". Well, it's simple and sel
 - After a brief introduction, let's dive a little more inside the project.
 - Here is the walk-through of "But.. I Love You" project.
 
-
-https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f-0e9641be8e7b
-
+https://github.com/RS-labhub/I-Love-You/assets/117426013/6f1f4923-50d1-4b85-96bd-99a1b84c78ee
 
 <p align="center">Video Demonstration</p>
 <br>
