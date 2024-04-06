@@ -1,5 +1,5 @@
 <p align="right">
-    ![logo](https://github.com/RS-labhub/I-Love-You/assets/117426013/e12f662c-c4ae-4e8a-95a7-f95daae92845)
+    <img src="Pages/Assets/logo.png" alt="But.. I Love You Logo" width="50px" height="50px">
 </p>
 
 <hr>
