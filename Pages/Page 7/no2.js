@@ -5,7 +5,7 @@ function enabledarkmode() {
   async function checkDark() {
     // init flagsmith
     await flagsmith.init({
-      environmentID: "K2EbQxscfBoTSYksio9ikJ"
+      environmentID: environment_id
     });
     const is_dark = flagsmith.getValue("dark_mode", {
       fallback: false
