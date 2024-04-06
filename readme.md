@@ -6,7 +6,7 @@
 <h1 align="center">
     BUT... I LOVE YOU ❣️
 </h1>
-<br>
+<hr>
 
 <h3 aligh ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 Just send this to her! 💓</h3>
 
@@ -14,6 +14,7 @@
 https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
 <br>
+
 ## But... I Love You
 - This project/ web application can help you to propose your crush and make her forever and ever yours only.
 
@@ -52,6 +53,7 @@ https://github.com/RS-labhub/I-Love-You/assets/117426013/2f14acfa-e161-4aa8-b70f
 <br>
 
 ## Screenshots
+<br>
 <p align="center">
   <img src="Screenshots/hello.png"  />
   <img src="Screenshots/shower.png"  />
