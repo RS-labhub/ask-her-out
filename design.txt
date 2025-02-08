@@ -4,7 +4,7 @@
     3. Animation on each pages
 
 #Page design:
-    1. First page: Hi/Hello
+    1. First page: Hi/Hello Aishiki 
     2. Second page: Compliment
     3. Third page: Ask her out
     4. If she says, "Yes", then Yes page
