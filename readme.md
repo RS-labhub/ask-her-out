@@ -1,1 +1,1 @@
-i love you aishiki
+i love you aishiki.
