@@ -10,7 +10,7 @@
 
 <h3 align ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 <br>Just send this to her! 💓</h3>
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
+https://github.com/HotMochaaa-labhub/I-Love-You/assets/117426013/ed08488c-2096-4f21-b77b-d72781d80537
 
 <br>
 
