@@ -44,7 +44,7 @@ So, what's the idead behind making "But.. I love you". Well, it's simple and sel
 - After a brief introduction, let's dive a little more inside the project.
 - Here is the walk-through of "But.. I Love You" project.
 
-https://github.com/RS-labhub/I-Love-You/assets/117426013/6f1f4923-50d1-4b85-96bd-99a1b84c78ee
+https://github.com/HotMochaaa-labhub/I-Love-You/assets/117426013/6f1f4923-50d1-4b85-96bd-99a1b84c78ee
 
 <p align="center">Video Demonstration</p>
 <br>
@@ -96,7 +96,7 @@ $~$
 2. Navigate to the Repository Directory: Change your current directory to the cloned I-Love-You repository:
 
   ```bash
-    cd I-Love-You
+    cd I-Love-You-Cherie<33
   ```
 
 3. Run I-Love-You web application using "Open with Live Server"
