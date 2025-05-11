@@ -5,7 +5,7 @@
 <h1 align="center">
     BUT... <br>I LOVE YOU ❣️
 </h1>
-<hr>
+
 
 <h3 align ="center">"Are you facing a relentless rejection from the one you adore?" 🥺 <br>Just send this to her! 💓</h3>
 
