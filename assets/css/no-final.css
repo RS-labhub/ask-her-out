@@ -63,7 +63,6 @@ h1{
 .red{
     color: red;
     font-size: clamp(1.7rem, 6vw, 3rem);
-    font-family: cursive;
 }
 
 img{
