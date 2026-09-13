@@ -157,7 +157,7 @@ $~$
     People who <a href="https://github.com/RS-labhub/I-Love-You/stargazers">STARRED</a> this repo
 </p>
 
-<p align="right">Note: The site is not responsive yet, but it will be responsive soon.</p>
+<p align="right">Note: The site is not responsive yet</p>
 
 <p align="right" >
     <img height="40px" width="40px" src="Pages/Assets\RS LOGO.png" />
