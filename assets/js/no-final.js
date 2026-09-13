@@ -2,8 +2,8 @@
 const img = document.getElementById('image');
 
 const images = {
-    depressed: '../Assets/attitude.gif',
-    ori: "../Assets/angry.gif"
+    depressed: '../assets/img/attitude.gif',
+    ori: "../assets/img/angry.gif"
 };
 
 function ChangeImage(giphy) {
@@ -72,5 +72,5 @@ function resetBG(){
 
 //Linking to no page
 function noFunction() {
-    window.location.href = "../Page 5/yes.html";
+    window.location.href = "yes.html";
 }

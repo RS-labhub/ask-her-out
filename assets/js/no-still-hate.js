@@ -19,8 +19,8 @@ setInterval(function(){
 
 //Linking to Yes and page
 function yesFunction() {
-    window.location.href = "../Page 7/no2.html";
+    window.location.href = "no-boyfriend.html";
 }
 function noFunction() {
-    window.location.href = "../Page 5/yes.html";
+    window.location.href = "yes.html";
 }

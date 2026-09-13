@@ -26,5 +26,5 @@ const scrollToBottom = () => {
 
 //Linking to other page
 function myFunction() {
-    window.location.href = "../Page 2/thirdPage.html";
+    window.location.href = "loading.html";
 }

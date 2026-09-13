@@ -3,15 +3,12 @@ body{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    /* background-image: linear-gradient(to right bottom, #cffafe, #22d3ee); */
-    /* background-image: linear-gradient(to right bottom, #016c8b, #003769); */
-    background-image: url('Pages/Assets/bg.gif'); 
+    background-image: url('../img/bg.gif');
     background-size: cover;
 }
 
 body.hovered {
-    /* background-image: linear-gradient(to left bottom, #fea0ff, #dac9fe); */
-    background-image: url('Pages/Assets/wall6.gif');
+    background-image: url('../img/wall6.gif');
     background-position: 0%;
     background-size: auto;
 }
@@ -51,15 +48,6 @@ body.hovered {
     content:"Hiiiii Cutieee \1F49E ";
 }
 
-.watermark {
-    opacity: 0.5;
-    color: rgb(238, 203, 203);
-    position: fixed;
-    top: 95%;
-    left: 47%;
-}
-
-a{
-    text-decoration: none;
+.watermark, .watermark a {
     color: rgb(238, 203, 203);
 }

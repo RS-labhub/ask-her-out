@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to navigate to the second page
   function navigateToSecondPage() {
-    window.location.href = "../Page 3/forthPage.html";
+    window.location.href = "propose.html";
   }
 
   // Call the showClickableButton function after 3 seconds

@@ -2,9 +2,9 @@
 const img = document.getElementById('image');
 
 const images = {
-    love: "../Assets/love.gif",
-    depressed: '../Assets/depressed.gif',
-    ori: "../Assets/handsome.gif"
+    love: "../assets/img/love.gif",
+    depressed: '../assets/img/depressed.gif',
+    ori: "../assets/img/handsome.gif"
 };
 
 function ChangeImage(giphy) {
@@ -32,8 +32,8 @@ function resetBG(){
 
 //Linking to Yes and page
 function yesFunction() {
-    window.location.href = "../Page 5/yes.html";
+    window.location.href = "yes.html";
 }
 function noFunction() {
-    window.location.href = "../Page 6/no1.html";
+    window.location.href = "no-still-hate.html";
 }

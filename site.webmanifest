@@ -1,0 +1,16 @@
+{
+  "name": "Ask Her Out",
+  "short_name": "ask-her-out",
+  "description": "A fun interactive web experience for asking your crush out.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#e80202",
+  "icons": [
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

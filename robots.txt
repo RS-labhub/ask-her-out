@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ask-her-out.rohansrma.me/sitemap.xml

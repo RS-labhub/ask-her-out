@@ -1,4 +1,14 @@
 {
+  "name": "ask-her-out",
+  "version": "1.0.0",
+  "description": "But... I Love You - a fun interactive web app to ask your crush out.",
+  "homepage": "https://ask-her-out.rohansrma.me/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RS-labhub/ask-her-out.git"
+  },
+  "author": "Rohan Sharma",
+  "license": "Apache-2.0",
   "dependencies": {
     "flagsmith": "^3.24.0"
   }
