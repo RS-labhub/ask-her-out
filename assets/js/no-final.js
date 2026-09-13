@@ -47,15 +47,28 @@ setInterval(function(){
     lines();
 }, 200);
 
-const maxWidth = 650;
-const maxHeight = 600;
+
+function moveButton() {
+    const button = document.getElementById('yes');
+    if (!button) return;
+    if (button.parentElement !== document.body) document.body.appendChild(button);
+    const pad = 12;
+    const maxX = Math.max(0, window.innerWidth - button.offsetWidth - pad * 2);
+    const maxY = Math.max(0, window.innerHeight - button.offsetHeight - pad * 2);
+    button.style.position = 'fixed';
+    button.style.margin = '0';
+    button.style.left = pad + Math.floor(Math.random() * (maxX + 1)) + 'px';
+    button.style.bottom = pad + Math.floor(Math.random() * (maxY + 1)) + 'px';
+}
 
 window.addEventListener('DOMContentLoaded', () =>{
-    const button = document.getElementById('yes')
-
-    button.addEventListener('mouseover', () => {
-        button.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
-        button.style.bottom = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+    const button = document.getElementById('yes');
+    button.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        moveButton();
+    }, { passive: false });
+    window.addEventListener('resize', () => {
+        if (button.style.position === 'fixed') moveButton();
     });
 });
 

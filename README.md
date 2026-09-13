@@ -14,6 +14,8 @@ https://github.com/RS-labhub/ask-her-out/assets/117426013/ed08488c-2096-4f21-b77
 ## But... I Love You
 "But... I Love You 💓" is a fun interactive "ask her out" web application designed to help you propose to your crush in a creative and personalized way. Inspired by the fear of rejection and the difficulty of expressing our feelings, the project turns a simple proposal into an engaging experience that gives you a unique chance to express your love and, hopefully, win their heart. 🤗
 
+**Song**: [Ello Ji Sanam Hum Aa Gaye](https://www.youtube.com/watch?v=8AmQ99-ZN2Y) | Andaz Apna Apna | Aamir Khan, Raveena Tandon | Vicky Mehta, Behroze
+
 https://github.com/RS-labhub/ask-her-out/assets/117426013/6f1f4923-50d1-4b85-96bd-99a1b84c78ee
 
 <p align="center">Video Demonstration</p>
@@ -71,13 +73,11 @@ https://github.com/RS-labhub/ask-her-out/assets/117426013/59831c53-631f-4c14-b8f
 <img  src="assets/img/author.jpg" alt="Author">
 
 <div align="center">
-
-<a href="mailto:rohansrma3@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/rohan-sharma-9386rs/">LinkedIn</a> · <a href="https://x.com/rrs00179">X/Twitter</a>
-
+  <a href="mailto:rohansrma3@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/rohan-sharma-9386rs/">LinkedIn</a> · <a href="https://x.com/rrs00179">X/Twitter</a>
 </div>
 
 
-<p align="right">Note: The site is not responsive yet</p>
+<p align="right">Note: The site is FINALLY responsive</p>
 
 <p align="right" >
   <img height="40px" width="40px" src="assets/img/rs-logo.png" />

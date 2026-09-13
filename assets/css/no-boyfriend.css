@@ -4,17 +4,26 @@
 	box-sizing: border-box;
 	font-family: dubai;
 }
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
 section{
 	position: relative;
-	min-height: 100vh;
+	min-height: 100svh;
 	background: #000;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: clamp(2rem, 8svh, 6rem);
+	padding: 2rem 1rem;
+	text-align: center;
 }
 section h2{
 	color: #fff;
-	font-size: 5em;
+	font-size: clamp(2rem, 9vw, 5em);
 	cursor: default;
 }
 
@@ -23,8 +32,9 @@ section h2 span{
 }
 
 section .btn{
-    margin: 25rem 10rem 0rem 0;
-    font-size: 30px;
+    margin: 0;
+    font-size: clamp(1.1rem, 3.5vw, 30px);
+    padding: 0.5rem 1.25rem;
 }
 
 .light{
@@ -38,11 +48,7 @@ section .btn{
 }
 
 .watermark {
-    opacity: 0.5;
     color: rgb(243, 214, 214);
-    position: fixed;
-    top: 95%;
-    left: 47%;
 }
 
 .watermark a{

@@ -1,6 +1,4 @@
-//Setting hearts
 function hearts(){
-    const container = document.querySelector('.container');
     const creat = document.createElement('div');
     creat.classList.add('hearts');
     creat.innerHTML = '💓';
@@ -8,7 +6,7 @@ function hearts(){
     creat.style.left = Math.random() * 100 + 'vw';
     creat.style.animationDuration = Math.random() * 3 + 2  + 's';
 
-    container.appendChild(creat)
+    document.body.appendChild(creat)
     setTimeout(() => {
         creat.remove();
     }, 3000);
@@ -16,15 +14,11 @@ function hearts(){
 
 setInterval(hearts, 100);
 
-//Scrolling to bottom
-const scrollingElement = (document.scrollingElement || document.body);
-
-const scrollToBottom = () => {
-    scrollingElement.scrollTop = scrollingElement.scrollHeight;
+function scrollToBottom() {
+    document.querySelector('.screens__track').classList.add('is-revealed');
 }
- 
 
-//Linking to other page
+
 function myFunction() {
     window.location.href = "loading.html";
 }

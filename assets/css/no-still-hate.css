@@ -15,13 +15,19 @@ body {
     #200f02
   ); */
   background-color: rgb(24, 22, 22);
-  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
   overflow: hidden;
 }
 
 .circle {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  pointer-events: none;
   width: 20px;
   aspect-ratio: 1/1;
   background: rgb(248, 248, 248);
@@ -56,12 +62,13 @@ body {
 }
 
 h1 {
-  margin: 10rem 0 0;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: center;
+  margin: clamp(3rem, 14svh, 10rem) 0 0;
+  padding: 0 1rem 3rem;
+  text-align: center;
+  font-size: clamp(2rem, 7vw, 3.5rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
+  position: relative;
   z-index: 1;
 }
 
@@ -73,32 +80,30 @@ h1 {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 7rem;
-  gap: 12rem; 
+  margin-top: clamp(2rem, 9svh, 7rem);
+  padding: 0 1rem;
+  gap: clamp(2rem, 16vw, 12rem);
+  position: relative;
 }
 
 #yes {
-  width: 150px;
-  height: 200px;
-  font-size: 50px;
+  width: clamp(105px, 28vw, 150px);
+  height: clamp(140px, 37vw, 200px);
+  font-size: clamp(2rem, 7.5vw, 50px);
   border-radius: 1rem 3rem 2rem 4rem;
   z-index: 1;
 }
 
 #no {
-  width: 200px;
-  height: 150px;
-  font-size: 50px;
+  width: clamp(140px, 37vw, 200px);
+  height: clamp(105px, 28vw, 150px);
+  font-size: clamp(2rem, 7.5vw, 50px);
   border-radius: 4rem 2rem 3rem 1rem;
   z-index: 1;
 }
 
 .watermark {
-  opacity: 0.5;
   color: rgb(243, 214, 214);
-  position: fixed;
-  top: 95%;
-  left: 47%;
 }
 
 .watermark a {

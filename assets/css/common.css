@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,20 +8,90 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Quicksand', 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .watermark {
   opacity: 0.5;
   position: fixed;
-  top: 95%;
-  left: 47%;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0.95rem;
   z-index: 10;
   white-space: nowrap;
+  text-align: center;
 }
 
 .watermark a {
   color: inherit;
+}
+
+@media (max-width: 480px) {
+  .watermark {
+    font-size: 0.75rem;
+  }
+}
+
+.music-toggle {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 2000;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.music-toggle:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.music-toggle.is-muted {
+  opacity: 0.4;
 }

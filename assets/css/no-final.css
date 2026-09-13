@@ -4,15 +4,21 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     background: #110515;
-	height: 100vh;
+	height: 100svh;
     overflow: hidden;
 }
 
 .circle{
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    pointer-events: none;
     width: 20px;
     aspect-ratio: 1/1;
     background: rgb(249, 206, 247);
@@ -46,24 +52,25 @@ body {
 }
 
 h1{  
-    margin: 5rem 0 0;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
+    margin: clamp(1.5rem, 6svh, 5rem) 0 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: clamp(1.3rem, 4.5vw, 2.2rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
 }
 
 .red{
     color: red;
-    font-size: 3rem;
+    font-size: clamp(1.7rem, 6vw, 3rem);
     font-family: cursive;
 }
 
 img{
     margin-top:0;
     padding-top: 1rem;
-    height: 500px;
+    height: clamp(230px, 50svh, 500px);
+    width: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,18 +81,19 @@ img{
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 29rem;
-    padding-top: 2rem;
-    gap: 12rem;
+    position: absolute;
+    left: 50%;
+    bottom: clamp(3rem, 10svh, 6rem);
+    transform: translateX(-50%);
+    gap: clamp(2.5rem, 18vw, 12rem);
 }
 
 .btn{
     display: inline-block;
-    position: relative;
-    top: calc(100% - 10rem);
-    min-width: 120px;
+    min-width: clamp(100px, 26vw, 120px);
     margin: 4px 2px;
-    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    font-size: clamp(1rem, 3.5vw, 1.25rem);
     outline: none;
     border: none;
     border-radius: 5px;
@@ -101,11 +109,13 @@ img{
     background-color: rgb(237, 16, 64);
 }
 
-#no:hover span {
+#no:hover span,
+#no.is-peeking span {
     display:none
 }
 
-#no:hover:before {
+#no:hover:before,
+#no.is-peeking:before {
     content:"Uff, You Girls 😑";
 }
 
@@ -114,11 +124,7 @@ body.noo {
 }
 
 .watermark {
-    opacity: 0.5;
     color: rgb(243, 214, 214);
-    position: fixed;
-    top: 95%;
-    left: 47%;
 }
 
 a{

@@ -1,20 +1,25 @@
-body {
-	height: 100vh;
+html, body {
+	height: 100%;
     overflow: hidden;
 }
 
+body {
+    height: 100svh;
+}
+
 h1{  
-    margin: 5rem 0 0;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
+    margin: clamp(1.5rem, 6svh, 5rem) 0 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #111;
 }
 
 img{
     margin-top:0;
-    height: 400px;
+    height: clamp(200px, 42svh, 400px);
+    width: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,12 +27,14 @@ img{
 }
 
 .buttons {
-    font-size: 35px;
+    font-size: clamp(1.3rem, 4vw, 35px);
     display: flex;
     justify-content: center;
-    margin-top: 29rem;
-    padding-top: 2rem;
-    gap: 12rem;
+    position: absolute;
+    left: 50%;
+    bottom: clamp(3rem, 10svh, 6rem);
+    transform: translateX(-50%);
+    gap: clamp(3rem, 18vw, 12rem);
 }
 
 .romantic1{
@@ -61,31 +68,60 @@ img{
 .romantic5{
     margin: 0;
     position: absolute;
-    top: 79%;
-    left: 79%;
+    top: 62%;
+    left: 88%;
     transform: translate(-50%, -50%);
 }
 .romantic6{
     margin: 0;
     position: absolute;
-    top: 75%;
-    left: 10%;
+    top: 58%;
+    left: 8%;
     transform: translate(-50%, -50%);
 }
 .romantic7{
     margin: 0;
     position: absolute;
-    top: 95%;
+    top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.romantic1,
+.romantic2,
+.romantic3,
+.romantic4,
+.romantic5,
+.romantic6,
+.romantic7 {
+    white-space: nowrap;
+    font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+}
+
+/* keep all seven scattered on a phone, just smaller and tucked around the gif */
+@media (max-width: 700px) {
+    .romantic1,
+    .romantic2,
+    .romantic3,
+    .romantic4,
+    .romantic5,
+    .romantic6,
+    .romantic7 {
+        font-size: 0.5rem;
+        padding: 2px 4px;
+    }
+
+    .romantic1{ top: 16%; left: 74%; }
+    .romantic2{ top: 22%; left: 24%; }
+    .romantic3{ top: 38%; left: 85%; }
+    .romantic4{ top: 45%; left: 15%; }
+    .romantic5{ top: 58%; left: 78%; }
+    .romantic6{ top: 63%; left: 20%; }
+    .romantic7{ top: 10%; left: 50%; }
+}
+
 .watermark {
-    opacity: 0.5;
     color: BLACK;
-    position: fixed;
-    top: 97%;
-    left: 47%;
 }
 
 a{

@@ -8,6 +8,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ask-her-out.rohansrma.me/pages/date.html">
     <link rel="icon" href="../assets/img/logo.png" type="image/png">
+    <link rel="preload" as="fetch" crossorigin href="../assets/audio/song.mp3" type="audio/mpeg">
+    <script>window.MUSIC_BASE = '../';</script>
+    <script src="../assets/js/music.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,14 +34,14 @@
 		<span></span>
     </div>
 
-    <h1>Would you like to &nbsp<span class="red"><b> DATE </b></span>&nbsp me?</h1>
+    <h1>Would you like to <b style="color: red;">DATE</b> me?</h1>
     <div class="content">
 	    <img id="image" src="../assets/img/handsome.gif" alt="Handsome character" loading="eager">
         <div class="buttons">
-        <button type="button" class="btn btn-danger btn-lg" id="yes" onclick="yesFunction()" onmouseover="ChangeImage('love'); bg1();" onmouseout="ResetImage(); resetBG();">
+        <button type="button" class="btn btn-danger btn-lg" id="yes" data-peek onclick="yesFunction()" onmouseover="ChangeImage('love'); bg1();" onmouseout="ResetImage(); resetBG();">
             <span>Yes &#129325;</span>
         </button>
-        <button type="button" class="btn btn-dark " id="no" onclick="noFunction()" onmouseover="ChangeImage('depressed'); bg2()" onmouseout="ResetImage(); resetBG();">
+        <button type="button" class="btn btn-dark " id="no" data-peek onclick="noFunction()" onmouseover="ChangeImage('depressed'); bg2()" onmouseout="ResetImage(); resetBG();">
             <span>No &#128532;</span>
         </button>
         </div>
@@ -49,5 +52,6 @@
     </div>
 
     <script src="../assets/js/date.js"></script>
+    <script src="../assets/js/touch-peek.js"></script>
 </body>
 </html>
