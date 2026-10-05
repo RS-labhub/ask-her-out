@@ -2,9 +2,9 @@
 const img = document.getElementById('image');
 
 const images = {
-    love: "../assets/img/love.gif",
-    depressed: '../assets/img/depressed.gif',
-    ori: "../assets/img/handsome.gif"
+    love: "../assets/img/love.webp",
+    depressed: '../assets/img/depressed.webp',
+    ori: "../assets/img/handsome.webp"
 };
 
 function ChangeImage(giphy) {

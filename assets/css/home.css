@@ -9,13 +9,13 @@ body{
     min-height: 100svh;
     display: flex;
     align-items: center;
-    background-image: url('../img/bg.gif');
+    background-image: url('../img/bg.webp');
     background-size: cover;
     background-position: center;
 }
 
 body.hovered {
-    background-image: url('../img/wall6.gif');
+    background-image: url('../img/wall6.webp');
     background-position: 0%;
     background-size: auto;
 }

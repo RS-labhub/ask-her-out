@@ -2,8 +2,8 @@
 const img = document.getElementById('image');
 
 const images = {
-    depressed: '../assets/img/attitude.gif',
-    ori: "../assets/img/angry.gif"
+    depressed: '../assets/img/attitude.webp',
+    ori: "../assets/img/angry.webp"
 };
 
 function ChangeImage(giphy) {

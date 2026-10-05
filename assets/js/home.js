@@ -1,8 +1,8 @@
 const img = document.getElementById('image');
 
 const images = {
-    hi: "assets/img/hi.gif",
-    ori: "assets/img/sad.gif"
+    hi: "assets/img/hi.webp",
+    ori: "assets/img/sad.webp"
 };
 
 function ChangeImage(giphy) {

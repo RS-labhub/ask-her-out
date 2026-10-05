@@ -1,25 +1,21 @@
 (function () {
   var SRC = (window.MUSIC_BASE || '') + 'assets/audio/song.mp3';
   var KEY_TIME = 'ily_music_time';
-  var KEY_MUTED = 'ily_music_muted';
-  var KEY_STARTED = 'ily_music_started';
-  var VOLUME = 1;
+  var KEY_PLAYING = 'ily_music_playing';
 
   var audio = new Audio();
   audio.loop = true;
-  audio.preload = 'auto';
-  audio.autoplay = true;
+  audio.preload = 'none';
+  audio.volume = 1;
   audio.setAttribute('playsinline', '');
-  audio.src = SRC;
 
   var startAt = parseFloat(sessionStorage.getItem(KEY_TIME) || '0') || 0;
-  var muted = sessionStorage.getItem(KEY_MUTED) === '1';
-  var started = sessionStorage.getItem(KEY_STARTED) === '1';
+  var wantPlay = sessionStorage.getItem(KEY_PLAYING) === '1';
+  var ready = false;
+  var loading = false;
   var btn = null;
   var seeked = false;
-
-  audio.volume = VOLUME;
-  audio.muted = true;
+  var waiting = false;
 
   function seek() {
     if (seeked || startAt <= 0) return;
@@ -27,8 +23,55 @@
     try { audio.currentTime = startAt; } catch (e) {}
   }
 
-  if (audio.readyState >= 1) seek();
+  function paint() {
+    if (!btn) return;
+    var playing = wantPlay;
+    btn.textContent = playing ? '🎵' : '🔇';
+    btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+    btn.classList.toggle('is-muted', !playing);
+    btn.classList.toggle('is-loading', !ready);
+  }
+
+  function setReady(value) {
+    if (ready === value) return;
+    ready = value;
+    paint();
+  }
+
+  function load() {
+    if (loading) return;
+    loading = true;
+    audio.preload = 'auto';
+    audio.src = SRC;
+    audio.load();
+  }
+
+  function play() {
+    var p = audio.play();
+    if (p && p.catch) {
+      p.catch(function (err) {
+        if (err && err.name === 'NotAllowedError') waitForGesture();
+      });
+    }
+  }
+
+  function waitForGesture() {
+    if (waiting) return;
+    waiting = true;
+    var events = ['pointerdown', 'touchend', 'click', 'keydown'];
+    function go(e) {
+      if (btn && e.target && btn.contains(e.target)) return;
+      events.forEach(function (name) { window.removeEventListener(name, go, true); });
+      waiting = false;
+      if (wantPlay) play();
+    }
+    events.forEach(function (name) { window.addEventListener(name, go, true); });
+  }
+
   audio.addEventListener('loadedmetadata', seek);
+  audio.addEventListener('canplaythrough', function () { setReady(true); });
+  audio.addEventListener('playing', function () { setReady(true); });
+  audio.addEventListener('waiting', function () { if (loading) setReady(false); });
 
   audio.addEventListener('timeupdate', function () {
     sessionStorage.setItem(KEY_TIME, String(audio.currentTime));
@@ -38,64 +81,15 @@
     sessionStorage.setItem(KEY_TIME, String(audio.currentTime));
   });
 
-  function paint() {
-    if (!btn) return;
-    btn.textContent = muted ? '🔇' : '🎵';
-    btn.setAttribute('aria-label', muted ? 'Unmute music' : 'Mute music');
-    btn.classList.toggle('is-muted', muted);
-  }
-
-  function play() {
-    var p = audio.play();
-    if (p && p.catch) p.catch(function () {});
-  }
-
-  function sound() {
-    seek();
-    audio.muted = false;
-    audio.volume = VOLUME;
-    play();
-    sessionStorage.setItem(KEY_STARTED, '1');
-    started = true;
-  }
-
-  function silence() {
-    audio.muted = true;
-  }
-
-  function boot() {
-    if (muted) { play(); paint(); return; }
-    audio.muted = false;
-    audio.volume = VOLUME;
-    var p = audio.play();
-    if (p && p.catch) {
-      p.catch(function () {
-        audio.muted = true;
-        play();
-        waitForGesture();
-      });
-    }
-    paint();
-  }
-
-  var waiting = false;
-  function waitForGesture() {
-    if (waiting) return;
-    waiting = true;
-    var events = ['pointerdown', 'touchstart', 'touchend', 'click', 'keydown', 'scroll'];
-    function go() {
-      events.forEach(function (e) { window.removeEventListener(e, go, true); });
-      waiting = false;
-      if (!muted) sound();
-    }
-    events.forEach(function (e) { window.addEventListener(e, go, true); });
-  }
-
   function toggle() {
-    muted = !muted;
-    sessionStorage.setItem(KEY_MUTED, muted ? '1' : '0');
-    if (muted) silence();
-    else sound();
+    wantPlay = !wantPlay;
+    sessionStorage.setItem(KEY_PLAYING, wantPlay ? '1' : '0');
+    if (wantPlay) {
+      load();
+      play();
+    } else {
+      audio.pause();
+    }
     paint();
   }
 
@@ -110,7 +104,15 @@
     });
     document.body.appendChild(btn);
     paint();
-    boot();
+
+    if (wantPlay) {
+      load();
+      play();
+    } else if (document.readyState === 'complete') {
+      load();
+    } else {
+      window.addEventListener('load', load);
+    }
   }
 
   if (document.readyState === 'loading') {
